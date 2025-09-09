@@ -5,3 +5,53 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* COLOR PALETTE */
+:root {
+    --white: white;
+
+    /* SECTION RIGHT COLORS */
+    --black: black;
+    --accent-color: #596D48;
+
+    /* FORM */
+    --default-input-color: #E5E7EB;
+    --valid-color: blue;
+    --error-color: red;
+}
+
+/* SECTION LEFT */
+.section-left {
+    background-image: url(../asset/img/plant.jpg);
+    color: var(--white);
+}
+
+.banner {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.logo-title {
+    font-family: "norsebold", sans-serif;
+}
+
+a {
+    color: var(--white);
+}
+
+/* SECTION RIGHT | TOP */
+
+
+/* SECTION RIGHT | MID */
+
+
+/* SECTION RIGHT | BOTTOM */
+button[type="submit"] {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.login-link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
