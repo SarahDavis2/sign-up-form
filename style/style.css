@@ -17,9 +17,10 @@
     --padding: 2rem;
 
     /* FORM */
-    --default-input-color: #E5E7EB;
-    --valid-color: blue;
-    --error-color: red;
+    --input-default-clr: #E5E7EB;
+    --input-selected-clr: rgb(61, 61, 255);
+    --input-invalid-clr: red;
+    --btn-hover-clr: #677e52;
 }
 
 body {
@@ -68,6 +69,10 @@ body {
 
 a {
     color: var(--white);
+}
+
+a:hover {
+    color: var(--accent-color);
 }
 
 /* SECTION RIGHT */
@@ -128,6 +133,23 @@ form {
     flex-direction: column;
 }
 
+/* UI */
+input {
+    border: none;
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+    outline: 1px solid var(--grey);
+}
+
+input:active, input:focus {
+    outline: 1px solid var(--input-selected-clr);
+    box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+}
+
+input:invalid {
+    outline: 1px solid var(--input-invalid-clr);
+}
+
 /* SECTION RIGHT | BOTTOM */
 .right-bottom {
     display: flex;
@@ -150,7 +172,16 @@ button[type="submit"] {
     background-color: var(--accent-color);
 }
 
+button[type="submit"]:hover {
+    box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+    background-color: var(--btn-hover-clr);
+}
+
 .login-link {
     color: var(--accent-color);
     text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
 }
