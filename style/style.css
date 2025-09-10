@@ -6,13 +6,15 @@
     font-style: normal;
 }
 
-/* COLOR PALETTE */
+/* VARIABLES */
 :root {
     --white: white;
 
-    /* SECTION RIGHT COLORS */
+    /* SECTION RIGHT */
     --black: black;
+    --grey: #f0f0f0;
     --accent-color: #596D48;
+    --padding: 2rem;
 
     /* FORM */
     --default-input-color: #E5E7EB;
@@ -20,33 +22,118 @@
     --error-color: red;
 }
 
+body {
+    display: flex;
+    height: 100vh;
+}
+
 /* SECTION LEFT */
 .section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    flex: 1 2 auto;
+    
+
     background-image: url(../asset/img/plant.jpg);
     color: var(--white);
 }
 
-.banner {
-    background-color: black;
-    opacity: 0.7;
+.blank-space {
+    height: 16rem;
 }
+
+.banner {
+    display: flex;
+
+    background-color: #00000070;
+}
+
+/* img[scr="asset/img/odin-lined.png"] {
+    width: 1px;
+} */
 
 .logo-title {
     font-family: "norsebold", sans-serif;
+}
+
+.footer-link {
+    margin-bottom: 1rem;
 }
 
 a {
     color: var(--white);
 }
 
-/* SECTION RIGHT | TOP */
+/* SECTION RIGHT */
+.section-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    flex: 1 1 auto;
+}
 
+/* SECTION RIGHT | TOP */
+.right-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background-color: var(--grey);
+    padding: var(--padding);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 
 /* SECTION RIGHT | MID */
+.right-mid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
+    padding: 1rem var(--padding) var(--padding) var(--padding);
+}
+
+.form-header {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    gap: 4rem;
+}
+
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}   
+
+.form-left > div, .form-right > div {
+    display: flex;
+    flex-direction: column;
+}
 
 /* SECTION RIGHT | BOTTOM */
+.right-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: var(--padding);
+    background-color: var(--grey);
+}
+
 button[type="submit"] {
+    height: 3rem;
+    width: 14rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+
     color: white;
     background-color: var(--accent-color);
 }
