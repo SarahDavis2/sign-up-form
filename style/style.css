@@ -24,7 +24,6 @@
 
 body {
     display: flex;
-    height: 100vh;
 }
 
 /* SECTION LEFT */
@@ -33,30 +32,34 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    width: 100%;
-    flex: 1 2 auto;
-    
+    width: 40%;
 
     background-image: url(../asset/img/plant.jpg);
+    background-size: cover;
     color: var(--white);
 }
 
 .blank-space {
-    height: 16rem;
+    height: 15rem;
 }
 
 .banner {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
 
     background-color: #00000070;
 }
 
-/* img[scr="asset/img/odin-lined.png"] {
-    width: 1px;
-} */
+.banner img {
+    height: 90%;
+    width: auto;
+}
 
 .logo-title {
     font-family: "norsebold", sans-serif;
+    font-size: 6rem;
 }
 
 .footer-link {
@@ -71,6 +74,7 @@ a {
 .section-right {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 100vh;
     flex: 1 1 auto;
@@ -80,12 +84,18 @@ a {
 .right-top {
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    flex: auto;
     gap: 1rem;
 
     background-color: var(--grey);
     padding: var(--padding);
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.right-top p {
+    width: 55ch;
 }
 
 /* SECTION RIGHT | MID */
@@ -99,6 +109,7 @@ a {
 
 .form-header {
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 form {
@@ -120,6 +131,7 @@ form {
 /* SECTION RIGHT | BOTTOM */
 .right-bottom {
     display: flex;
+    flex: auto;
     flex-direction: column;
     gap: 2rem;
 
