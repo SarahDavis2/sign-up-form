@@ -1,4 +1,4 @@
-# sign-up-form
+# Sign-up Form
 This sign-up-form displays skills in the form making process involving HTMl and CSS with only client-side validation.
 
 ## Images Cited
